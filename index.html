@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wokiee</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- <a href="https://icons8.com/icon/104/star">Star icon by Icons8</a> -->
+    <!-- navbar section starts here-->
+
+    <div class="mobile-side-menu">
+
+        <div class="inner-mobile-menu">
+           
+                <div class="mobile-menu-close"><span onclick="closeMobileMenuFunc()"><i class="fal fa-times"></i></span> Close</div>
+                <div class="mobile-menu-items">
+                    <ul>
+                        <li><a href="#">HOME <span><i class="fal fa-angle-right"></i></span></a></li>
+                        <li><a href="#">SHOP <span><i class="fal fa-angle-right"></i></span> </a></li>
+                        <li><a href="#">PAGES <span><i class="fal fa-angle-right"></i></span></a></li>
+                        <li><a href="#">BLOG <span><i class="fal fa-angle-right"></i></span></a></li>
+                        <li><a href="#">MEN <span><i class="fal fa-angle-right"></i></span></a></li>
+                        <li><a href="#">WOMEN <span><i class="fal fa-angle-right"></i></span></a></li>
+                        <li><a href="#">FASHION <span><i class="fal fa-angle-right"></i></span></a></li>
+                    </ul>
+                </div>
+        
+                <div class="mobile-menu-icon">
+                        <a href="#"><i class="fal fa-lock-alt"></i><span>Sign In</span></a>
+                        <a href="#"><i class="fal fa-user"></i><span>Register</span></a>
+                        <a href="#"><i class="fal fa-shopping-bag"></i><span>VIew Cart</span></a>
+                        <a href="#"><i class="fal fa-heart"></i><span>Wishlist</span></a>
+                        <a href="#"><i class="fal fa-balance-scale"></i><span>Compare</span></a>
+                </div>
+        
+                <div class="mobile-menu-setting">
+                    <a href="#">English</a>
+                    <a href="#">Fracias</a>
+                    <a href="#">Deutsh</a>
+                    <a href="#">Espaniol</a>
+                </div>
+        
+                <div class="mobile-menu-price">
+                    <a href="#">$ US Dollars</a>
+                    <a href="#">$ Euro</a>
+                    <a href="#">$ British Pounds</a>
+                </div>
+    
+        </div>
+       
+
+
+    </div>
+
+
+
+    <div class="navbar">
+        <!-- for mobile menu -->
+        <div class="mobile-menu container">
+            <span onclick="menuOpenFunc()"><i class="far fa-bars"></i></span>
+            <div class="brand"><img src="./images/logo.png" alt="logo"></div>
+            <div class="mobile-user-icon">
+                <span ><i class="fal fa-search"></i></span>
+                <span class="relative"><i class="fal fa-shopping-bag"></i></span>
+            </div>
+        </div>
+        <!-- for desktop menu -->
+        <nav class="container relative desktop-menu">
+            <div class="brand">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="menu-item">
+                <ul>
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">pages</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">men</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <span onclick="searchAccordionFunc()"><i class="fal fa-search"></i></span>
+                <span onclick="cartAccordionFunc()" class="relative"><i class="fal fa-shopping-bag"></i>
+                    <div class="absolute cart-count">1</div>
+                </span>
+                <span onclick="userAccordionFunc()"><i class="fal fa-user"></i></span>
+                <span><i class="far fa-sliders-h"></i></span>
+            </div>
+
+            <!-- user accordion starts -->
+            <div class="user-accordion">
+                <div class="inner-user">
+                <a href="#"><i class="fal fa-lock-alt"></i><span>Sign In</span></a>
+                <a href="#"><i class="fal fa-user"></i><span>Register</span></a>
+                <a href="#"><i class="fal fa-shopping-bag"></i><span>VIew Cart</span></a>
+                <a href="#"><i class="fal fa-heart"></i><span>Wishlist</span></a>
+                <a href="#"><i class="fal fa-balance-scale"></i><span>Compare</span></a>
+                </div>
+            
+            </div>
+            <!-- user accordion ends -->
+            <!-- cart accordion starts -->
+            <div class="cart-accordion">
+                <div class="inner-cart">
+                    <div class="cart-header flex justify-between align-center">
+                        <div><img src="./images/product1-sm.jpg"></div>
+                        <div>
+                            <h4 class="f-weight-400">Premier Cropped Skinny Jean</h4>
+                            <h6 class="f-weight-300 text-primary">Blue</h6>
+                            <p><span style="color: var(--footer-color);">1X</span> <span class="f-size-16 f-weight-500">$380.00</span></p>
+                        </div>
+                        <div><span><i class="fal fa-trash-alt"></i></span></i></div>
+                    </div>
+                    <hr class="mx-5 bor-b-no">
+                    <div class="flex justify-between align-center">
+                        <h4 class="f-weight-500">TOTAL:</h4>
+                        <h4 class="f-weight-500">$380.00</h4>
+                    </div>
+
+                    <div class="px-8 f-size-14 f-weight-300">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">i agree with the terms and condition</label>
+                    </div>
+
+                    <div class="checkout-btn">
+                        <a href="#">PROCEED TO CHECKOUT</a>
+                    </div>
+
+                    <div class="text-center">
+                        <h4 class="text-primary f-weight-400">VIEW CART</h4>
+                    </div>
+                </div>
+
+            </div>
+            <!-- cart accordion ends -->
+           
+        </nav>
+
+            <!-- search accordion starts here -->
+        <div class="search-accordion">
+            <div class="container inner-search">
+                <div class="px-8 flex justify-between align-center">
+                    <h5 class="f-size-14 f-weight-300 text-footer">What are you Looking for?</h5>
+                    <span onclick="closeSearchAccordionFunc()" class="text-footer"><i class="fal fa-times"></i></span>
+                </div>
+                <div class="px-8 flex justify-between align-center">
+                    <input class="search-input" type="text" placeholder="SEARCH PRODUCTS...">
+                    <span><i class="fa-2x fal fa-search"></i></span>
+                </div>
+
+            </div>
+        </div>
+            <!-- search accordion ends here -->
+        
+
+
+
+    </div>
+  
+    <!-- navbar section ends here-->
+    
+    
+    <!-- banner section starts here -->
+    <section class="banner">
+        <div class="slider" >
+            <div class="slide">
+                <div class="relative slider-img">
+                      <img src="images/banner1.png">
+                    <div class="slider-body">
+                        <span><p>multipurpose</p></span>
+                        <h1>Premium<br> Shopify Theme</h1>
+                        <p class="small">30 skins,poweful featres,great support exclusive offer</p>
+                        <button class="btn1">SHOP NOW</button>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="slide">
+                <div class="relative">
+                     <img src="images/banner2.png">
+                <div class="slider-body">
+                    <span><p style="color:var(--pure);">ready to</p></span>
+                    <h1 style="color:var(--pure);">Use Unique<br>Demos</h1>
+                    <p class="small">optimized for speed,website that sells</p>
+                    <button class="btn2">SHOP NOW</button>
+                </div>
+                </div>
+            </div>
+
+            
+            <div class="slide">
+                <div class="relative">
+                     <img src="images/banner7.jpg">
+                <div class="slider-body">
+                    <span><p style="color:var(--primary);">Wokiee</p></span>
+                    <h1 style="color:var(--text-color);">Find Products For<br>Yor Shops</h1>
+                    <p class="small">optimized for speed,website that sells</p>
+                    <button class="btn3">SHOP NOW</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- banner section ends here -->
+
+    <!-- category banner section starts here -->
+    <section class="category-section">
+        <div class="category-wrapper">
+            <div class="left-image">
+                <div class="left-first">
+                    <div class="relative hidden same-size margin">
+                        <img src="./images/sale-image.jpg" alt="sale" class="width trans">
+                        <div class="absolute center cate-name-style bal">SALE</div>
+                    </div>
+                   <div class="relative hidden same-size margin">
+                        <img src="./images/new-image.jpg" class="width trans">
+                    <div class="absolute center cate-name-style">NEW</div>
+                </div>
+                </div>
+                <div class="left-second">
+                   <div class="relative hidden mid-size margin">
+                        <img src="./images/women2-image.jpg" class="width trans">
+                    <div class="absolute center cate-name-style">WOMEN</div>
+                </div>
+                </div>
+            </div>
+    
+            <div class="right-image">
+                <div class="right-first">
+                  <div class="relative hidden same-size margin"><img src="./images/men-iamge.jpg" class="width trans">
+                    <div class="absolute center cate-name-style">MEN</div>
+                </div>  
+                 <div class="relative hidden same-size margin"><img src="./images/accessories-image.jpg" class="width trans">
+                    <div class="absolute center cate-name-style">ACCeSSORIES</div>
+                </div>   
+                </div>
+                <div class="right-second">
+                    <div class="relative hidden large-size margin"><img src="./images/shoe-image.jpg" class="width trans">
+                     <div class="absolute center cate-name-style">SHOE</div>
+                 </div>     
+                </div>
+    
+            </div>
+        </div>
+       
+
+    </section>
+
+    <!-- category banner section ends here -->
+    
+    
+    <!-- products section starts here -->
+
+    <section class="prodcts-section">
+        <div class="product-header">
+            <h1>BEST SELLER</h1>
+            <h6>TOP PRODUCTS OF THE WEEK</h6>
+        </div>
+
+        <div class="products container">
+
+            <div class="product">
+                <div class="product-wrapper text-center" id="product-mainDiv">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product1-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                        </div>
+                        <p class="product-name">Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product1-1.jpg')" class="borderd size-product-gallery"><img src="./images/product1-sm.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product1-2.jpg')" class="ml size-product-gallery"><img src="./images/product1-sm2.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product1-3.jpg')" class="ml size-product-gallery"><img src="./images/product1-sm3.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product1-4.jpg')" class="ml size-product-gallery"><img src="./images/product1-sm4.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product1-5.jpg')" class="ml size-product-gallery"><img src="./images/product1-sm5.jpg" class="width ronded"></div>
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <!-- <div class="absolute new-tooltip">New</div> -->
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product2-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                        </div>
+                        <p class="product-name">East Hampton Fleece Hoodie</p>
+                        <p class="price">$450.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product2-1.jpg')" class="borderd size-product-gallery"><img src="./images/product2-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product2-2.jpg')" class="ml size-product-gallery"><img src="./images/product2-sm2.jpg" class="width rounded"></div>
+                                 
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <!-- <div class="absolute new-tooltip">New</div> -->
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product3-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p class="product-name">Relaxed-Fit Cotton Shirt</p>
+                        <p class="price">$490.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product3-1.jpg')" class="borderd size-product-gallery"><img src="./images/product3-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product3-2.jpg')" class="ml size-product-gallery"><img src="./images/product3-sm2.jpg" class="width rounded"></div>
+                         
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product4-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                        </div>
+                        <p class="product-name">Tailored Fit Mesh-Panel Polo</p>
+                        <p class="price">$520.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product4-1.jpg')" class="borderd size-product-gallery"><img src="./images/product4-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product4-2.jpg')" class="ml size-product-gallery"><img src="./images/product4-sm2.jpg" class="width rounded"></div>
+                       
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <!-- <div class="absolute new-tooltip">New</div> -->
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product6.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p class="product-name">Slim Fit Cotton Oxford Shirt</p>
+                        <p class="price">$320.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product5-1.jpg')" class="borderd size-product-gallery"><img src="./images/product5-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product5-2.jpg')" class="ml size-product-gallery"><img src="./images/product5-sm2.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product5-3.jpg')" class="ml size-product-gallery"><img src="./images/product5-sm3.jpg" class="width rounded"></div>
+         
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product6-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">GAP</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p class="product-name">Faxon Canvas Low-Top Sneaker</p>
+                        <p class="price">$480.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product6-1.jpg')" class="borderd size-product-gallery"><img src="./images/product6-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product6-2.jpg')" class="ml size-product-gallery"><img src="./images/product6-sm2.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product6-3.jpg')" class="ml size-product-gallery"><img src="./images/product6-sm3.jpg" class="width rounded"></div>
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product7-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">lACOSTE</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p class="product-name">Viscose-Cashmere Scarf</p>
+                        <p class="price">$280.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product7-1.jpg')" class="borderd size-product-gallery"><img src="./images/product7-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product7-2.jpg')" class="ml size-product-gallery"><img src="./images/product7-sm2.jpg" class="width rounded"></div>
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="width" src="./images/product8-1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">LEVIS</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                        </div>
+                        <p class="product-name">Plaid Cotton Oxford Shirt</p>
+                        <p class="price">$680.00</p>
+
+                        <div class="product-footer">
+                            <div class="product-gallery flex justify-center">
+                                  <div onclick="changeImage(event,'./images/product8-1.jpg')" class="borderd size-product-gallery"><img src="./images/product8-sm1.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product8-2.jpg')" class="ml size-product-gallery"><img src="./images/product8-sm2.jpg" class="width rounded"></div>
+                                  <div onclick="changeImage(event,'./images/product8-3.jpg')" class="ml size-product-gallery"><img src="./images/product8-sm3.jpg" class="width rounded"></div>
+                             </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- products section ends here -->
+
+    <!-- offer section starts here -->
+    <section class="offer-section">
+
+        <div class="relative w-480 offer-div">
+            <div class="w-480 hidden">
+                <img class="width offer-img" src="./images/offer1.jpg">
+            </div>
+            <div class="absolute offer-body w-230">
+                <h4>ATUMN <span>2021</span></h4>
+                <h1>NEW ARRIVALS</h1>
+            </div>
+        </div>
+
+        <div class="relative w-480 offer-div">
+            <div class="w-480 hidden">
+                <img class="width offer-img" src="./images/offer2.png">
+            </div>
+            <div class="absolute offer-body w-230">
+                <h4>NEW COLLECTION</h4>
+                <h1 class="text-primary">STREETSTYLE</h1>
+            </div>
+        </div>
+
+        <div class="relative w-480 offer-div">
+            <div class="w-480 hidden">
+                <img class="width offer-img" src="./images/offer3.jpg">
+            </div>
+            <div class="absolute offer-body w-340">
+                <h4>GREAT SUMMER CLEARANCE SALES</h4>
+                <h1>GET UP TO <span class="text-primary">70% OFF</span></h1>
+            </div>
+        </div>
+
+    </section>
+    <!-- offer section ends here -->
+
+    <!-- trending section starts here -->
+    <section class="trending-section">
+        <div class="product-header">
+            <h1>TRENDING</h1>
+            <h6>TOP WISHES OF THE WEEK</h6>
+        </div>
+
+        <div class="trending-products container">
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending1.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p class="product-name">Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                                <div class="trend-product-size">
+                                    <ul>
+                                        <li class="product-size-bordered">S</li>
+                                        <li>M</li>
+                                        <li>L</li>
+                                        <li>XL</li>
+                                    </ul>
+                                </div>
+                                  <!-- <div class="borderd size-product-gallery"><img src="./images/product1-sm.jpg" class="width rounded"></div>
+                                  <div class="ml size-product-gallery"><img src="./images/product1-sm2.jpg" class="width rounded"></div>
+                                  <div class="ml size-product-gallery"><img src="./images/product1-sm3.jpg" class="width rounded"></div>
+                                  <div class="ml size-product-gallery"><img src="./images/product1-sm4.jpg" class="width rounded"></div>
+                                  <div class="ml size-product-gallery"><img src="./images/product1-sm5.jpg" class="width ronded"></div> -->
+                        
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending2.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="change-img" src="./images/trending3.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="change-img2" src="./images/trending4.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending5.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending6.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending7.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-wrapper text-center">
+                    <div class="absolute new-tooltip">New</div>
+                    <div class="product-icons">
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-eye"></i></div>
+                            <div class="absolute tooltip -left-80">quick view</div>
+                        </div>
+                        <div class="relative icon-wrapper">
+                           <div class="special-icon"> <i class="fal fa-heart"></i></div>
+                           <div class="absolute tooltip -left-60">wishlist</div>    
+                        </div>
+                        <div class="relative icon-wrapper">
+                            <div class="special-icon"><i class="fal fa-balance-scale"></i></div>  
+                            <div class="absolute tooltip -left-110">add to compare</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/trending8.jpg">
+                    </div>
+                    <div class="product-body text-center">
+                        <h5 class="text-primary font-400">ZARA</h5>
+                        <div class="rating-wrapper">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-size" src="./images/rating-fill.svg">
+                            <img class="rating-half-size" src="./images/rating-half.svg">
+                            <img class="rating-half-size" src="./images/rating-zero.svg">
+                        </div>
+                        <p>Premier Cropped Skinny Jean</p>
+                        <p class="price">$380.00</p>
+
+                        <div class="product-footer">
+                            <div class="trend-product-size">
+                                <ul>
+                                    <li class="product-size-bordered">S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                             <div class="cart-btn">
+                                 <a href="#">
+                                    <span><i class="bi bi-bag"></i></span>
+                                    ADD TO CART
+                                 </a>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- trending section ends here -->
+
+    <!-- blog section starts here -->
+    <section class="blog-section container">
+        <div class="product-header">
+            <h1>LATEST FROM BLOG</h1>
+            <h6>THE FRESHEST AND MOST EXCITING NEWS</h6>
+        </div>
+
+        <div class="blog-wrapper">
+            <div class="blog-div relative">
+                <div class="blog-img">
+                    <img src="./images/blog1.jpg" class="width">
+                </div>
+                <div class="blog-body absolute text-center">
+                    <div class="blog-background"></div>
+                    <div class="blog-main-body">
+                        <h5>LADIES</h5>
+                    <h1>CATALOGUE MODE</h1>
+                    <p>It is a long established fact that by the readable
+                   content of a page when looking at its layout.
+                    </p>
+                    <div class="blog-footer flex justify-around">
+                        <div>
+                            <span class="text-primary">by </span><span class="blog-name">Diego Lopez</span><span class="text-primary">on june 21,2021</span>
+                        </div>
+                        <div>
+                            <span><i class="fal fa-comment"></i></span> <span style="color: var(--fourth);">25</span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="blog-div relative">
+                <div class="blog-img">
+                    <img src="./images/blog2.jpg" class="width">
+                </div>
+                <div class="blog-body absolute text-center">
+                    <div class="blog-background"></div>
+                    <div class="blog-main-body">
+                        <h5>WOMEN</h5>
+                    <h1>COUNTDOWN TIMEZONE</h1>
+                    <p>It is a long established fact that by the readable
+                   content of a page when looking at its layout.
+                    </p>
+                    <div class="blog-footer flex justify-around">
+                        <div>
+                            <span class="text-primary">by </span><span class="blog-name">Jenny Foster</span><span class="text-primary">on june 21,2021</span>
+                        </div>
+                        <div>
+                            <span><i class="fal fa-comment"></i></span> <span style="color: var(--fourth);">20</span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="blog-div relative">
+                <div class="blog-img">
+                    <img src="./images/blog3.jpg" class="width">
+                </div>
+                <div class="blog-body absolute text-center">
+                    <div class="blog-background"></div>
+                    <div class="blog-main-body">
+                        <h5>MEN</h5>
+                    <h1>PURCHASED PROMO</h1>
+                    <p>It is a long established fact that by the readable
+                   content of a page when looking at its layout.
+                    </p>
+                    <div class="blog-footer flex justify-around">
+                        <div>
+                            <span class="text-primary">by </span><span class="blog-name">Adam Milne</span><span class="text-primary">on june 21,2021</span>
+                        </div>
+                        <div>
+                            <span><i class="fal fa-comment"></i></span> <span style="color: var(--fourth);">10</span>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- blog section ends here -->
+
+    <!-- social section starts here -->
+    <section class="social-section">
+
+        <div class="social-header text-center">
+                <span><a href="#">@ FOLLOW</a> US ON</span>
+                <h6>INSTAGRAM</h6> 
+        </div>
+
+        <div class="social-body flex">
+            <div class="box-image relative">
+                <div class="absolute social-icon-insta">
+                    <span class="absolute"><i class="fa-2x fab fa-instagram"></i></span>
+                </div>
+                <img class="width" src="./images/social1.jpg">
+            </div>
+            <div class="box-image relative">
+                <div class="absolute social-icon-insta">
+                    <span class="absolute"><i class="fa-2x fab fa-instagram"></i></span>
+                </div>
+                <img class="width" src="./images/social2.jpg">
+            </div>
+            <div class="box-image relative">
+                <div class="absolute social-icon-insta">
+                    <span class="absolute"><i class="fa-2x fab fa-instagram"></i></span>
+                </div>
+                <img class="width" src="./images/social3.jpg">
+            </div>
+            <div class="box-image relative">
+                <div class="absolute social-icon-insta">
+                    <span class="absolute"><i class="fa-2x fab fa-instagram"></i></span>
+                </div>
+                <img class="width" src="./images/social4.jpg">
+            </div>
+            <div class="box-image relative">
+                <div class="absolute social-icon-insta">
+                    <span class="absolute"><i class="fa-2x fab fa-instagram"></i></span>
+                </div>
+                <img class="width" src="./images/women-image.jpg">
+            </div>
+            <div class="box-image relative">
+                <div class="absolute social-icon-insta">
+                    <span class="absolute"><i class="fa-2x fab fa-instagram"></i></span>
+                </div>
+                <img class="width" src="./images/social6.jpg">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- social section ends here -->
+
+    <!-- business section starts here -->
+    <section class="business-section container">
+        <div class="business-box flex justify-center align-center">
+            <span><i class="fa-2x fal fa-headset"></i></span>
+            <div>
+                <h3>SUPPORT 24/7</h3>
+                <p>Contact us 24 hours a day, 7 days a week</p>
+            </div>
+        </div>
+        <div class="business-box flex justify-center align-center">
+            <span><i class="fa-2x fal fa-share"></i></span>
+            <div>
+                <h3>30 DAYS RETURN</h3>
+                <p>Simply return it within 24 days for an exchange.</p>
+            </div>
+        </div>
+        <div class="business-box flex justify-center align-center">
+            <span><i class="fa-2x far fa-truck"></i></span>
+            <div>
+                <h3>FREE SHIPPING</h3>
+                <p>Free shipping on all US order or order above $99</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- business section ends here -->
+
+    <!-- contact section starts here -->
+    <section class="contact-section">
+        <div class="contact-wrapper container">
+
+            <div class="contact-header">
+                <h2>BE TOUCH WITH US:</h2>
+            </div>
+    
+            <div class="contact-input">
+                <input type="email" placeholder="Enter your e-mail">
+                <a href="#" class="contact-btn">JOIN US</a>
+            </div>
+    
+            <div class="contact-icons">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-google"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-pinterest-p"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <!-- contact section ends here -->
+
+    <!-- footer section starts here -->
+
+    <section class="footer-section">
+        <div class="footer-wrapper container">
+            <div class="footer-category">
+                <div class="footer-header"><h3>CATEGORIES</h3></div>
+                <ul class="menu-list">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Clearance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-category">
+                <div class="footer-header"><h3>BUY WITH US</h3></div>
+                <ul class="menu-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-about ">
+                <div class="footer-header"><h3>ABOUT</h3></div>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+            </div>
+
+            <div class="footer-contact">
+                <div class="footer-header"><h3>CONTACT US</h3></div>
+                <p><span>ADDRESS:</span> 7895 Piermont Dr NE Albuquerque,</p>
+                <p>NM 198866, United States of America</p>
+                <p><span>PHONE:</span> +566 4774 9930; +566 4774 9940</p>
+                <p><span>HOURS:</span> all week from 9 am to 9 pm</p>
+                <p><span>EMAIL:</span><a href="#" class="footer-mail"> drnazrlislam900@gmail.com</a></p>
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- footer section starts here -->
+
+    <!-- footer brands section starts here -->
+
+    <section class="footer-brands">
+        <div class="inner-footer-brands container flex justify-between align-center">
+            <div class="flex justify-center align-center">
+                <img src="./images/logo.png">
+                <p>&copy; jibon 2021.ALl Rights Reserved </p>
+            </div>
+    
+            <div class="flex justify-center align-center">
+                <img src="images/paypal_new_x40.png">
+                <img src="images/visa_2_x40.png">
+                <img src="images/master_3_x40.png">
+                <img src="images/apple_pay_4_x40.png">
+                <img src="images/google_pay_5_x40.png">
+            </div>
+        </div>
+       
+
+    </section>
+
+    <!-- footer brands section ends here -->
+    <!-- messenger icon fixed -->
+    <div class="messenger-icon">
+        <a href="#"><img src="images/messenger.svg"></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
